@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+                                 /* MENU INICIAL*/
+.navbar {
+    position: fixed;
+    z-index: 1;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    display: inline-block;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #cccccc, #e9ff26, #ff0b03);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+                                 /* RECUADRO FOTO PERFIL*/
+header {
+    margin-top: 10%;
+    height: 465px;
+    background-color:hsl(0, 0%, 100%);
+}
+
+.foto3{
+    position: absolute;
+    width: 530px;
+    top: 20%;
+    left: 60%;
+}
+                                 /* FOTO PERFIL*/
+
+.union{
+    height: 250px;
+    width: 100%;
+    bottom: -50%;
+    background: #1c92d2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom,#ffffff,#f2fcfe, #2C5364);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffffff,#f2fcfe, #2C5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+                                 
+.brand {
+    margin: 100px 20px 100px 20px;
+}
+
+.foto{
+    margin:1.1%;
+    margin-top:-1%;
+    margin-left: 10%;
+    border: 3px solid rgb(26, 26, 26);
+    float:left;
+    width: 225px;
+    border-radius: 15%;
+}
+
+.foto2{
+    margin:0%;
+    margin-top :1.5%;
+    margin-left: 5%;
+    float:left;
+    width: 250px;
+
+}
+
+.brand h1 {
+    margin: 0px 20px 20px 150px ;
+    font-size: 84px;
+    color:#000000;
+    font-family: 'Dancing Script', cursive;
+}
+
+.brand h3 {
+    color: #1e9477;
+    font-size: 3.9em;
+    font-family: 'Dancing Script', cursive;
+}
+.brand h3:hover {
+    transition: 1s;
+    color: rgba(190, 38, 0, 0.966);
+}
+
+.brand p{
+    height: 20px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+
+.brand h4 {
+    -webkit-text-stroke: 1px rgb(245, 245, 245);
+    font-size: 1.8em;
+}
+
+
+.brand h6 {
+    -webkit-text-stroke: 1px rgb(245, 245, 245);
+    font-size: 1.8em;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    padding: 20px 12px;
+    font-size: 1.09em;
+    
+}
+
+.menu .active {
+    color: rgb(145, 163, 167);
+}
+
+.menu a:hover {
+    color: #ffff;
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1CB5E0, #2e2eff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1CB5E0, #000046);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: ease-in .30s;
+}
+
+
+
+.download-cv {
+    position: fixed;
+    z-index: 1;
+    right: 0.6%;
+    bottom: 14%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 2px;
+    border: 1px solid #8f5f25;
+    border-radius: 8px;
+    background: #e99b3c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e99b3c), to(#253a8f));
+    background: -moz-linear-gradient(top, #e99b3c, #253a8f);
+    background: linear-gradient(to bottom, #e99b3c, #253a8f);
+    -webkit-box-shadow: #d78f37 0px 0px 40px 0px;
+    -moz-box-shadow: #d78f37 0px 0px 40px 0px;
+    box-shadow: #d78f37 0px 0px 40px 0px;
+    text-shadow: #5a3c17 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.download-cv:hover,
+.download-cv:focus {
+    border: 1px solid #b3772e;
+    background: #ffba48;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffba48), to(#2c46ac));
+    background: -moz-linear-gradient(top, #ffba48, #2c46ac);
+    background: linear-gradient(to bottom, #ffba48, #2c46ac);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.download-cv:active {
+    background: #8f5f25;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8f5f25), to(#253a8f));
+    background: -moz-linear-gradient(top, #8f5f25, #253a8f);
+    background: linear-gradient(to bottom, #8f5f25, #253a8f);
+}
+
+.download-cv:before {
+    content: "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-size: 100% 100%;
+}
+
+
+.divider {
+    height: 3px;
+    width: 60px;
+    background-color: aqua;
+    margin-top: 5px;
+    margin-bottom: 6em;
+}
+
+.about p {
+    margin-bottom: 10em;
+}
+
+.portfolio {
+    width: 100vw;
+    margin-top: 0px;
+    padding: 0px;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #000000, #050708);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #010303, #203A43, #2C5364);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.portfolio-headings {
+    width: 100vw;
+    padding: 0em;
+}
+
+
+.portfolio-headings h2 {
+    font-size: 1.7em;
+    color: antiquewhite;
+    margin-top: 10px;
+    padding-top: 25px;
+}
+
+.portfolio .container {
+    width: 100vw;
+    height: 75vh;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+/* MENU DE PROYECTOS*/
+/* COLORES DE FORMATOS de EXPERIENCIAS*/
+.card {
+ width: 300px;
+ height: 470px;
+ background-color: rgb(11, 137, 141);
+ margin: 0.8em;
+ border-radius: 50px;
+ font-family: 'Arial';
+
+}
+
+.card2 {
+ width: 300px;
+ height: 430px;
+ background-color: rgb(181, 184, 174);
+ margin: 0.8em;
+ border-radius: 50px;
+ font-family: 'Arial';
+}
+.card3 {
+    width: 300px;
+height: 380px;
+background-color: rgb(238, 120, 42);
+margin: 0.8em;
+border-radius: 50px;
+font-family: 'Arial';
+
+
+}
+.card4 {
+    width: 300px;
+height: 340px;
+background-color: rgb(49, 44, 44);
+margin: 0.8em;
+border-radius: 50px;
+color: #ffffff;
+font-family: 'Arial';
+
+
+}
+/* COLORES DE  FORMATOS de PROYECTOS*/
+
+.card9 {
+    width: 300px;
+    height: 359px;
+    background-color: rgb(153, 14, 21);
+    margin: 0.8em;
+    border-bottom-right-radius: 90px;
+}
+.card10 {
+        width: 300px;
+    height: 375px;
+    background-color: rgb(214, 135, 31);
+    margin: 0.8em;
+    border-radius: 50px;
+}
+.card11 {
+        width: 300px;
+    height: 400px;
+    background-color: rgb(29, 99, 89);
+    margin: 0.8em;
+    border-radius: 50px;
+
+}
+.card12 {
+  width: 300px;
+ height: 409px;
+ background-color: rgb(128, 99, 60);
+ margin: 0.8em;
+ border-bottom-left-radius: 90px;
+}
+
+/* COLORES DE  FORMATOS de PROCESOS*/
+
+.card18 {
+ width: 300px;
+ height: 470px;
+ background-color: rgb(199, 163, 116);
+ margin: 0.8em;
+ border-radius: 50px;
+}
+.card19 {
+ width: 300px;
+ height: 430px;
+ background-color: rgb(217, 219, 53);
+ margin: 0.8em;
+ border-bottom-left-radius: 90px;
+}
+.card20 {
+ width: 300px;
+ height: 380px;
+ background-color: rgb(112, 201, 90);
+ margin: 0.8em;
+ border-bottom-right-radius: 90px;
+}
+.card21 {
+ width: 300px;
+ height: 300px;
+ background-color: rgb(14, 40, 46);
+ margin: 0.8em;
+ border-radius: 50px;
+}
+
+/* COLORES DE  FORMATOS de LOGISTICA*/
+
+.card25 {
+ width: 300px;
+ height: 359px;
+ background-color: rgba(240, 140, 202, 0.747);
+ margin: 0.8em;
+ border-bottom-right-radius: 90px;
+}
+.card26 {
+ width: 300px;
+ height: 375px;
+ background-color: rgb(157, 52, 218);
+ margin: 0.8em;
+ border-bottom-right-radius: 90px;
+}
+.card27 {
+ width: 300px;
+ height: 400px;
+ background-color: rgb(105, 7, 129);
+ margin: 0.8em;
+ border-bottom-right-radius: 90px;
+}
+
+.card28 {
+ width: 300px;
+ height: 409px;
+ background-color: rgb(153, 14, 21);
+ margin: 0.8em;
+ border-bottom-right-radius: 90px;
+}
+
+/* COLORES DE  FORMATOS de CIENCIA DE DATOS*/
+
+.card30 {
+ width: 300px;
+ height: 440px;
+ background-color: rgb(67, 184, 119);
+ margin: 0.8em;
+ border-bottom-left-radius: 90px;
+}
+.card31 {
+ width: 300px;
+ height: 420px;
+ background-color: rgb(7, 80, 114);
+ margin: 0.8em;
+ border-bottom-left-radius: 90px;
+}
+.card32 {
+ width: 300px;
+ height: 380px;
+ background-color: rgb(7, 136, 65);
+ margin: 0.8em;
+ border-bottom-left-radius: 90px;
+}
+.card33 {
+ width: 300px;
+ height: 300px;
+ background-color: rgb(6, 171, 177);
+ margin: 0.8em;
+ border-bottom-left-radius: 90px;
+}
+
+.card .project-details {
+ margin: 0 auto;
+ margin: 1em;
+ width: 100%;
+}
+
+.card .projects-details a {
+ text-decoration: none;
+ color: #0a2027;
+ text-transform: uppercase;
+}
+
+.proyect-details-content {
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ margin-top: 1em;
+}
+
+.project-details-button a {
+ text-decoration: none;
+ color: #191c32;
+}
+
+.contact-headings h2 {
+ font-size: 2.2em;
+}
+
+
+
+.project-details-button a {
+ text-decoration: none;
+ color: #191c32;
+}
+
+.card_title {
+    padding: 3px;
+    text-align:justify;
+}
+
+.card_projects-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card_projects-links a {
+    color: rgb(7, 11, 14 33);
+    text-decoration: none;
+    font-size: 1.2em;
+    ;
+}
+
+.card_projects-links i {
+    margin: 12px;
+    font-size: 1.2em;
+    color: hsl(0, 0%, 100%);
+}
+
+.container-contact {
+    padding: 1em;
+    margin: 0.3 auto;
+}
+
+.container-contact img {
+    width: 150px;
+    height: 150px;
+    bottom: 0px;
+}
+
+.container {
+    width: 100em;
+}
+
+/* IMAGENES DE EXPERIENCIAS*/
+
+.card_img {
+ width: 100%;
+ height: 150px;
+ background-image: url(..//img/supervisor22.jpg);
+ background-size: cover;
+}
+
+.card_img2 {
+ width: 100%;
+ height: 35%;
+ background-image: url(../img/laboratorio.jpg);
+ background-size: cover;
+}
+                                
+.card_img3 {
+ width: 100%;
+ height: 150px;
+ background-image: url(../img/proyectos.jpg);
+ background-size: cover;
+}
+                                
+.card_img4 {
+ width: 100%;
+ height: 150px;
+ background-image: url(../img/proceos.jpg);
+ background-size: cover;
+}
+
+/* IMAGENES DE PROYECTOS*/
+
+.card_img5 {
+ width: 100%;
+ height: 150px;
+ background-image: url(../img/ciclo-de-vida.png);
+ background-size: cover;
+}
+                                
+.card_img6 {
+ width: 100%;
+ height: 110px;
+ background-image: url(../img/lean.jpg);
+ background-size: cover;
+}
+                                
+.card_img7 {
+ width: 100%;
+ height: 150px;
+ background-image: url(../img/cultura2.jpg);
+ background-size: cover;
+}
+.card_img8 {
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/REU.png);
+    background-size: cover;
+}
+
+/* IMAGENES DE PROCESOS*/
+
+.card_img9 {
+ width: 100%;
+ height: 230px;
+ background-image: url(../img/sgc.PNG);
+ background-size: cover;
+}
+                                                                       
+.card_img10 {
+ width: 100%;
+ height: 150px;
+ background-image: url(../img/HACCP-LOGO-Y-CERTIFIED.jpg);
+ background-size: cover;
+}
+                                                                       
+.card_img11 {
+ width: 100%;
+ height: 150px;
+ background-image: url(../img/isoseguridad.jpg);
+ background-size: cover;
+}
+.card_img12 {
+ width: 100%;
+ height: 200px;
+ background-image: url(../img/bpm.jpg);
+ background-size: cover;
+}
+                                       
+/* IMAGENES PARA LOGISTICA*/
+
+.card_img15 {
+    width: 100%;
+   height: 150px;
+   background-image: url(../img/logisitcapro.jpg);
+   background-size: cover;
+}             
+
+.card_img16 {
+   width: 100%;
+   height: 150px;
+   background-image: url(../img/indicadores.png);
+   background-size: cover;
+}                                   
+.card_img17 {
+   width: 100%;
+   height: 150px;
+   background-image: url(../img/FLUJOS.jpeg);
+   background-size: cover;
+}
+.card_img18 {
+ width: 100%;
+ height: 150px;
+ background-image: url(../img/areas_de_conflicto.jpg);
+ background-size: cover;
+}
+/* IMAGENES PARA CIENCIA DE DATOS*/
+
+.card_img20 {
+    width: 100%;
+   height: 190px;
+   background-image: url(../img/big-data.jpeg);
+   background-size: cover;
+}
+.card_img21 {
+   width: 100%;
+   height: 220px;
+   background-image: url(../img/tecnologias.jpg);
+   background-size: cover;
+}
+
+.card_img22 {
+   width: 100%;
+   height: 150px;
+   background-image: url(../img/proyectocargad.jpg);
+   background-size: cover;
+}
+
+.card_img23 {
+ width: 100%;
+ height: 150px;
+ background-image: url(../img/proyectocargad.jpg);
+ background-size: cover;
+}
+
+
+.foto:hover {
+ transform: translateY(0.5%);
+}
+
+
+.card:hover,.card18:hover{
+ transform: translateY(1.8%);
+}
+.card2:hover,.card19:hover{
+ transform: translateY(1.8%);
+}
+.card3:hover,.card20:hover{
+    transform: translateY(1.8%);
+}
+.card4:hover,.card21:hover{
+ transform: translateY(1.8%);
+}
+.card9:hover,.card25:hover, .card30:hover{
+    transform: translateY(1.8%);
+}
+.card10:hover, .card26:hover, .card31:hover{
+ transform: translateY(1.8%);
+}
+.card11:hover, .card27:hover, .card32:hover{
+ transform: translateY(1.8%);
+}
+.card12:hover, .card28:hover, .card33:hover{
+ transform: translateY(1.8%);
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 420px;
+    background-color: rgb(251, 255, 255);
+}
